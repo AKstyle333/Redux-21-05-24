@@ -19,7 +19,7 @@ const App = () => {
                         dispatch(product_Actions.product_add(10));
                     }}
                 >
-                    INCREASE +
+                    INCREASE {productData.product_price} + 10
                 </button>
                 <button
                     className="btn ms-3 btn-danger"
@@ -27,7 +27,7 @@ const App = () => {
                         dispatch(product_Actions.product_subtract(10));
                     }}
                 >
-                    DECREASE -
+                    DECREASE {productData.product_price} - 10
                 </button>
                 <button
                     className="btn ms-3 btn-secondary"
@@ -35,7 +35,7 @@ const App = () => {
                         dispatch(product_Actions.product_divide(10));
                     }}
                 >
-                    DIVIDE /
+                    DIVIDE {productData.product_price} / 10
                 </button>
                 <button
                     className="btn ms-3 btn-warning"
@@ -43,7 +43,7 @@ const App = () => {
                         dispatch(product_Actions.product_multiply(10));
                     }}
                 >
-                    MULTIPLY *
+                    MULTIPLY {productData.product_price} * 10
                 </button>
                 <p>=================================================================================================================</p>
                 <Child />
